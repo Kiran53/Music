@@ -9,7 +9,7 @@ function Constants() {
     updateRating: `${url}/updaterating/{id}/{rating}`,
 
     // listen song url
-    songUrl: "http://localhost:3000/songs/",
+    songUrl: "http://localhost:3000/public/",
 
     // the Content-Type
     header: { "Content-Type": "application/json" },
