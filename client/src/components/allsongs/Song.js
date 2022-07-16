@@ -7,7 +7,7 @@ const Song = (props) => {
   const allConstants = Constants()
   const { movie, album, name, rating, singers, genre, changeRating, _id, url } = props
   const audioPlayer = useRef();
-
+  
   return (
     <div className="song-info">
 
@@ -34,8 +34,8 @@ const Song = (props) => {
         </div>
       </div>
       
-      <audio ref={audioPlayer}  src={process.env['PUBLIC_URL']+url} controls />
-      <img src="/songs/k.png" />
+      <audio ref={audioPlayer} style={{width:"300px"}} src={process.env['PUBLIC_URL']+url} controls />
+      
       <div className="song-rating">
         {allConstants.RATING_POINTS.map((ele, index) => {
           return (
